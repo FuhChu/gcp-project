@@ -1,1 +1,1 @@
-# gcp-project
+# This is the repo for our GCP DevOps project
