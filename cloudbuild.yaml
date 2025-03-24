@@ -31,7 +31,7 @@ steps:
   - run
   - --filename=gke.yaml
   - --image=gcr.io/$PROJECT_ID/quickstart-image:tag1
-  - --location=us-west2
+  - --location=us-central1-c
   - --cluster=my-first-cluster-1
   - --namespace=gcp-devops-prod
 
