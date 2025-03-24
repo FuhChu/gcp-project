@@ -14,6 +14,6 @@ steps:
   args: ['build', '-t', 'us-west2-docker.pkg.dev/$PROJECT_ID/gcp-project/quickstart-image:tag1', '.']
   automapSubstitutions: true
 images:
-- 'us-west2-docker.pkg.dev/$PROJECT_ID/quickstart-docker-repo/quickstart-image:tag1'
+- 'us-west2-docker.pkg.dev/$PROJECT_ID/gcp-project/quickstart-image:tag1'
 options:
   logging: 'CLOUD_LOGGING_ONLY'
