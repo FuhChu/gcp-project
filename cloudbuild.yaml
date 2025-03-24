@@ -34,3 +34,6 @@ steps:
   - --location=us-west2
   - --cluster=my-first-cluster-1
   - --namespace=gcp-devops-prod
+
+options:
+  logging: 'CLOUD_LOGGING_ONLY'
