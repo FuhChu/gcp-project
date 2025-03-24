@@ -16,3 +16,6 @@ steps:
   automapSubstitutions: true
 images:
 - 'us-west2-docker.pkg.dev/$PROJECT_ID/quickstart-docker-repo/quickstart-image:tag1'
+options:
+'958637993131-compute@developer.gserviceaccount.com'
+logging: 'CLOUD_LOGGING_ONLY'
