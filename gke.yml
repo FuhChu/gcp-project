@@ -1,0 +1,31 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: my-gke-app-deployment
+  labels:
+    app: my-gke-app
+spec:
+  replicas: 3 # Number of pods to run
+  selector:
+    matchLabels:
+      app: my-gke-app
+  template:
+    metadata:
+      labels:
+        app: my-gke-app
+    spec:
+      containers:
+      - name: my-gke-app-container
+        image: gcr.io/$PROJECT_ID/quickstart-image:tag1 # Replace with your image
+        ports:
+        - containerPort: 8080 # The port your application listens on
+        env: # Example environment variables
+          - name: MY_ENV_VAR
+            value: "my_value"
+        resources: # Resource requests and limits
+          requests:
+            cpu: 100m
+            memory: 128Mi
+          limits:
+            cpu: 500m
+            memory: 512Mi
